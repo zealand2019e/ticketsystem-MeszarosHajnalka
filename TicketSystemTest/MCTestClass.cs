@@ -1,15 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TicketLibrary;
 
 
 namespace TicketSystemTest
-{   [TestClass]
+{
+    [TestClass]
    public class MCTestClass
     {
-        MC mc = new MC("ABC-123", new DateTime(2019,11,11));
+        MC mc = new MC("ABC-123", new DateTime(2019,11,11),false);
         /// <summary>
         /// Testing the Price method, if it returns the value that we expected.
         /// </summary>

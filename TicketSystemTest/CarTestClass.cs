@@ -7,7 +7,7 @@ namespace TicketSystemTest
     [TestClass]
     public class CarTestClass
     {
-        Car car = new Car("ABC-234", new DateTime(2019, 11, 11));
+        Car car = new Car("ABC-234", new DateTime(2019, 11, 11),false);
 
         /// <summary>
         /// Testing the Price method, if it returns the value that we expected.
@@ -26,15 +26,6 @@ namespace TicketSystemTest
         {
             string vehicle = car.VehicleType();
             Assert.AreEqual("Car", vehicle);
-        }
-        /// <summary>
-        /// Testing if the licenseplate is more than 7 characters, then is it throwing an exception
-        /// </summary>
-        [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
-        public void LicenseplateExceptionTest()
-        {
-            Car car = new Car("ABC-28888", new DateTime(2019, 11, 11));
         }
     }
 }

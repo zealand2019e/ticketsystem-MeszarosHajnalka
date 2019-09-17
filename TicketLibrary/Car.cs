@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace TicketLibrary
 {
     public class Car:Vehicle
     {
-       
-
-        public Car(string licensePlate, DateTime date) : base(licensePlate, date)
+        public Car(string licensePlate, DateTime date, bool brobizz) : base(licensePlate, date, brobizz)
         {
         }
 
@@ -18,7 +14,7 @@ namespace TicketLibrary
         /// <returns>240</returns>
         public override decimal Price()
         {
-            return 240;
+            return calculatePrice(240);
         }
         /// <summary>
         /// Method which returns the type of the vehicle

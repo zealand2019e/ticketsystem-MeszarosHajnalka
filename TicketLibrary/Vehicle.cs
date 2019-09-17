@@ -6,8 +6,9 @@ namespace TicketLibrary
     {
         private string licensePlate;
         private DateTime date;
+        private bool brobizz;
 
-        public Vehicle(string licensePlate, DateTime date)
+        public Vehicle(string licensePlate, DateTime date, bool brobizz)
         {
             if (licensePlate.Length > 7)
             {
@@ -15,6 +16,7 @@ namespace TicketLibrary
             }
             this.licensePlate = licensePlate;
             this.date = date;
+            this.brobizz = brobizz;
         }
 
         public string LicensePlate { get => licensePlate; }
@@ -24,8 +26,26 @@ namespace TicketLibrary
         /// </summary>
         /// <returns>100</returns>
         public virtual decimal Price()
+        {          
+            return calculatePrice(100);
+        }
+        /// <summary>
+        /// Method, which is checking if the discount needs to be applied
+        /// </summary>
+        /// <param name="price"></param>
+        /// <returns>the price with or without the discount</returns>
+        protected decimal calculatePrice(decimal price)
         {
-            return 100;
+            decimal x = price;
+
+            if (brobizz)
+            {
+                x = x - x / 100 * 5;
+                return x;
+            }
+
+            return x;
+
         }
     }
 }

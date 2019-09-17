@@ -9,6 +9,10 @@ namespace TicketLibrary
 
         public Vehicle(string licensePlate, DateTime date)
         {
+            if (licensePlate.Length > 7)
+            {
+               throw new ArgumentException("Licenseplate cannot be more then 7 characters long...");
+            }
             this.licensePlate = licensePlate;
             this.date = date;
         }

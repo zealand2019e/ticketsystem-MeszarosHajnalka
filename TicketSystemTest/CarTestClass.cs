@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using TicketLibrary;
 
 namespace TicketSystemTest
@@ -6,7 +7,7 @@ namespace TicketSystemTest
     [TestClass]
     public class CarTestClass
     {
-        Car car = new Car();
+        Car car = new Car("ABC-234", new DateTime(2019, 11, 11));
 
         /// <summary>
         /// Testing the Price method, if it returns the value that we expected.

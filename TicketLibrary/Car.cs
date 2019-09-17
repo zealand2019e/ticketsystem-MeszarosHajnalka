@@ -4,16 +4,19 @@ using System.Text;
 
 namespace TicketLibrary
 {
-    public class Car
+    public class Car:Vehicle
     {
-        public string licensePlate;
-        public DateTime date;
+       
+
+        public Car(string licensePlate, DateTime date) : base(licensePlate, date)
+        {
+        }
 
         /// <summary>
         /// Method which returns the price of the car
         /// </summary>
         /// <returns>240</returns>
-        public decimal Price()
+        public override decimal Price()
         {
             return 240;
         }

@@ -9,7 +9,7 @@ namespace TicketSystemTest
 {   [TestClass]
    public class MCTestClass
     {
-        MC mc = new MC();
+        MC mc = new MC("ABC-123", new DateTime(2019,11,11));
         /// <summary>
         /// Testing the Price method, if it returns the value that we expected.
         /// </summary>

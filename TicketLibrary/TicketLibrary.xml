@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TicketLibrary</name>
+    </assembly>
+    <members>
+        <member name="M:TicketLibrary.Car.Price">
+            <summary>
+            Method which returns the price of the car
+            </summary>
+            <returns>240</returns>
+        </member>
+        <member name="M:TicketLibrary.Car.VehicleType">
+            <summary>
+            Method which returns the type of the vehicle
+            </summary>
+            <returns>Car</returns>
+        </member>
+        <member name="M:TicketLibrary.MC.Price">
+            <summary>
+            Method, which returns the price of the vehicle
+            </summary>
+            <returns>125</returns>
+        </member>
+        <member name="M:TicketLibrary.MC.Vehicle">
+            <summary>
+            Method, which returns the type of the vehicle
+            </summary>
+            <returns>MC</returns>
+        </member>
+        <member name="M:TicketLibrary.Vehicle.Price">
+            <summary>
+            Method, which returns a default value, and it will be overrided
+            </summary>
+            <returns>100</returns>
+        </member>
+        <member name="M:TicketLibrary.Vehicle.calculatePrice(System.Decimal)">
+            <summary>
+            Method, which is checking if the discount needs to be applied
+            </summary>
+            <param name="price"></param>
+            <returns>the price with or without the discount</returns>
+        </member>
+    </members>
+</doc>

@@ -9,7 +9,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TicketLibrary\TicketLibrary.csproj" />
+    <Reference Include="TicketLibrary">
+      <HintPath>ExternDll\TicketLibrary.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

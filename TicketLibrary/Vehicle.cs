@@ -21,6 +21,8 @@ namespace TicketLibrary
 
         public string LicensePlate { get => licensePlate; }
         public DateTime Date { get => date; }
+        public bool Brobizz { get => brobizz; set => brobizz = value; }
+
         /// <summary>
         /// Method, which returns a default value, and it will be overrided
         /// </summary>
